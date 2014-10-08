@@ -1,0 +1,43 @@
+<style type="text/css">
+	i{
+		margin-left: 10px;
+	}
+	.table{
+		width:880px;
+	}
+
+</style>
+<div class='row'>
+	<div class='span12'>
+		<h3>Listado Roles</h3>
+		<a href="rol/add" class="Agregar">Agregar Rol</a>
+		<table class='table table-bordered table-striped table-hover'>
+			<thead>
+				<tr>
+					<th id="nombre">NOMBRE</th>
+					<th id="precio">SUELDO POR HORA</th>
+					<th id="precio">SUELDO BASE</th>
+					<th>OPERACIONES</th>
+				</tr>
+			</thead>
+			<tboby>
+				<?php 
+					if(!empty($rol)){
+						foreach ($rol as $key => $value) {
+							echo "<tr>";
+							echo "<td>".$value->rol_nombre."</td>";
+							echo "<td>".$value->rol_sueldo_hora."</td>";
+							echo "<td>".$value->rol_sueldo_base."</td>";
+							echo "<td>";
+							echo "<a href='rol/edit/".$value->rol_id."'><i class='icon-white icon-pencil'></i></a>";
+							echo "<a href='rol/delete/".$value->rol_id."'><i class='icon-white icon-trash'></i></a>";
+							echo "</tr>";
+						}
+					}else{
+						echo "<tr><td colspan='6' style='text-align:center;'>SIN REGISTROS EN LA BASE DE DATOS</td></tr>";
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
+</div>

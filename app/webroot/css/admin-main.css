@@ -1,0 +1,75 @@
+.logo{
+	width:300px;
+	height:102px;
+	padding:10px 0;
+	float: left;
+}
+body{
+	background-image: url("/furaibar/img/fondo.jpg");
+}
+.navbar .nav > li > a,.navbar .brand,.navbar .nav > li.active > a, .navbar .nav > li.active > a{
+	color:#A1BF37;
+}
+.navbar .nav > li > a:hover,.navbar .brand,.navbar .nav > li.active > a:hover, .navbar .nav > li.active > a:hover{
+	color:#A1BF37;
+}
+
+.Cuerpo{
+	background-color: #3F4449;
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	width:880px;
+	padding:30px;
+}
+.table{
+	width:880px;
+}
+form .table{
+	width:840px;
+}
+.table th, .table td {
+	text-align: center;
+}
+.TablaPromos th, .TablaPromos td {
+	padding-right:30px;
+}
+h3{
+	color:#A1BF37;
+}
+select{
+	color: rgb(92, 87, 82);
+}
+
+.uneditable-input, input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	color:black;
+}
+.Vista .uneditable-input, input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	color:black;
+	background-color:white;
+}
+.Promocion{
+	text-align:left; 
+	width:758px;
+}
+.Agregar{
+		color:#A1BF37;
+		font-weight: bold;
+}
+.Agregar:hover{
+		text-decoration: none;
+		color:white;
+}
+.MainNav{
+	background-color:black;
+}
+.accion{
+	margin-left: 5px; 
+}
+.accion1{
+	margin-left:0px;
+}
+.DivForm{
+	border-radius: 10px;
+	background-color: #3F4449;
+}
